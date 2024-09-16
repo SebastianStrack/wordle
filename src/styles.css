@@ -168,6 +168,10 @@ h1 {
   bottom: 0;
   width: 100%;
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   margin: 0 auto;
   padding: 32px;
   text-align: center;
@@ -182,6 +186,41 @@ h1 {
 }
 .sad.banner {
   background: var(--color-error);
+  color: white;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.keyboard-letter {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.keyboard-letter.correct {
+  background: var(--color-success);
+  color: white;
+}
+.keyboard-letter.incorrect {
+  background: var(--color-gray-300);
+  color: white;
+}
+.keyboard-letter.misplaced {
+  background: var(--color-warning);
   color: white;
 }
 
